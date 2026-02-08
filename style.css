@@ -23,6 +23,9 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   max-width: 750px;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -34,7 +37,7 @@ h1 {
   position: relative;
   height: 120px;
 }
-
+/* 
 button {
   padding: 12px 28px;
   font-size: 18px;
@@ -42,9 +45,35 @@ button {
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.2s ease;
+} */
+/* 
+#noBtn {
+  background-color: #adb5bd;
+  color: white;
+  position: absolute;
+} */
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 120px;
 }
 
-button:hover {
+.buttons button {
+  padding: 12px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#noBtn {
+  transition: transform 0.15s ease;
+}
+button: hover {
   transform: scale(1.05);
 }
 
@@ -54,11 +83,7 @@ button:hover {
   margin-right: 15px;
 }
 
-#noBtn {
-  background-color: #adb5bd;
-  color: white;
-  position: absolute;
-}
+
 
 
 .tickets {
