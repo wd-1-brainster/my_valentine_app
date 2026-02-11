@@ -4,7 +4,7 @@ const yesBtn = document.getElementById("yesBtn");
 let offsetX = 0;
 let offsetY = 0;
 
-noBtn.addEventListener("mouseenter", () => {
+noBtn.addEventListener("click", () => {
   const maxX = window.innerWidth / 3;
   const maxY = window.innerHeight / 4;
 
